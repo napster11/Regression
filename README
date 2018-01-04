@@ -1,0 +1,14 @@
+The directory rep1 contains the train-validation-test split in 1:1:1 ratio for the original MNIST test-set available at https://pjreddie.com/projects/mnist-in-csv/. All three splits contains classes in almost same proportions.
+The format is label, pix-11, pix-12, pix-13, ...
+where pix-ij is the pixel in the ith row and jth column.
+Each image is 28X28, so the total pixels are 784.
+The labels values are 0 to 9.
+
+The directory rep2 contains the 30-dimensional SVD representation (U*Sigma) for the original MNIST test-set available at https://pjreddie.com/projects/mnist-in-csv/. The train-validation-test split is the same as before.
+The format is label, feature-1, feature-2, ...., feature-30
+where feature-i is the ith feature from SVD.
+The labels values are 0 to 9.
+
+The directory rep3 contains the 495-dimensional second order representation for the above SVD. The train-validation-test split is the same as before.
+The format is label, feature-1, feature-2, ...., feature-495. The features here include f_i, f_i*f_i, f_i*f_j, where f_i, f_j are the features from the above SVD representation.
+The labels values are 0 to 9.
