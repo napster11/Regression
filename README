@@ -1,3 +1,6 @@
+Data Format
+
+
 The directory rep1 contains the train-validation-test split in 1:1:1 ratio for the original MNIST test-set available at https://pjreddie.com/projects/mnist-in-csv/. All three splits contains classes in almost same proportions.
 The format is label, pix-11, pix-12, pix-13, ...
 where pix-ij is the pixel in the ith row and jth column.
